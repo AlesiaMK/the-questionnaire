@@ -6,7 +6,7 @@ form.addEventListener("submit", (event) => {
 
     // Здесь твой код
     const form = document.querySelector('.form');
-    const button = getElementById('button');
+    const button = document.getElementById('button');
     const name = document.getElementById('name');
     const secondName = document.getElementById('secondName');
     const phone = document.getElementById('phone');
@@ -26,7 +26,7 @@ form.addEventListener("submit", (event) => {
                     "secondName": secondName.value,
                     "phone": phone.value,
                     "email": email.value,
-                    "agree": agree.value
+                    "agree": agree.checked
                 }),
             })
             .then((result) => {
